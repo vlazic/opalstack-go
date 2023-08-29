@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_UsageAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_UsageAPIService(t *testing.T) {
 
 	t.Run("Test UsageAPIService MailusageLatest", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.UsageAPI.MailusageLatest(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_UsageAPIService(t *testing.T) {
 
 	t.Run("Test UsageAPIService WebusageLatest", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.UsageAPI.WebusageLatest(context.Background()).Execute()
 

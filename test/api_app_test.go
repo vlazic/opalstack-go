@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_AppAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_AppAPIService(t *testing.T) {
 
 	t.Run("Test AppAPIService AppCreate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AppAPI.AppCreate(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_AppAPIService(t *testing.T) {
 
 	t.Run("Test AppAPIService AppDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.AppAPI.AppDelete(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_OpalStack_AppAPIService(t *testing.T) {
 
 	t.Run("Test AppAPIService AppFailed", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.AppAPI.AppFailed(context.Background()).Execute()
 
@@ -58,7 +59,7 @@ func Test_OpalStack_AppAPIService(t *testing.T) {
 
 	t.Run("Test AppAPIService AppInstalled", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.AppAPI.AppInstalled(context.Background()).Execute()
 
@@ -69,7 +70,7 @@ func Test_OpalStack_AppAPIService(t *testing.T) {
 
 	t.Run("Test AppAPIService AppList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AppAPI.AppList(context.Background()).Execute()
 
@@ -81,7 +82,7 @@ func Test_OpalStack_AppAPIService(t *testing.T) {
 
 	t.Run("Test AppAPIService AppRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 
@@ -95,7 +96,7 @@ func Test_OpalStack_AppAPIService(t *testing.T) {
 
 	t.Run("Test AppAPIService AppUpdate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AppAPI.AppUpdate(context.Background()).Execute()
 

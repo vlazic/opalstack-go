@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_TokenAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_TokenAPIService(t *testing.T) {
 
 	t.Run("Test TokenAPIService TokenCreate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.TokenAPI.TokenCreate(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_TokenAPIService(t *testing.T) {
 
 	t.Run("Test TokenAPIService TokenDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.TokenAPI.TokenDelete(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_OpalStack_TokenAPIService(t *testing.T) {
 
 	t.Run("Test TokenAPIService TokenList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.TokenAPI.TokenList(context.Background()).Execute()
 
@@ -59,7 +60,7 @@ func Test_OpalStack_TokenAPIService(t *testing.T) {
 
 	t.Run("Test TokenAPIService TokenRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var key string
 
@@ -73,7 +74,7 @@ func Test_OpalStack_TokenAPIService(t *testing.T) {
 
 	t.Run("Test TokenAPIService TokenUpdate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.TokenAPI.TokenUpdate(context.Background()).Execute()
 

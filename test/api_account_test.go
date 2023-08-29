@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_AccountAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_AccountAPIService(t *testing.T) {
 
 	t.Run("Test AccountAPIService AccountList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AccountAPI.AccountList(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_AccountAPIService(t *testing.T) {
 
 	t.Run("Test AccountAPIService AccountRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 
@@ -50,7 +51,7 @@ func Test_OpalStack_AccountAPIService(t *testing.T) {
 
 	t.Run("Test AccountAPIService AccountReadCurrent", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AccountAPI.AccountReadCurrent(context.Background()).Execute()
 
@@ -62,7 +63,7 @@ func Test_OpalStack_AccountAPIService(t *testing.T) {
 
 	t.Run("Test AccountAPIService AccountReadCurrent2", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AccountAPI.AccountReadCurrent2(context.Background()).Execute()
 
@@ -74,7 +75,7 @@ func Test_OpalStack_AccountAPIService(t *testing.T) {
 
 	t.Run("Test AccountAPIService AccountUpdate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AccountAPI.AccountUpdate(context.Background()).Execute()
 
@@ -86,7 +87,7 @@ func Test_OpalStack_AccountAPIService(t *testing.T) {
 
 	t.Run("Test AccountAPIService AccountUpdateCurrent", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AccountAPI.AccountUpdateCurrent(context.Background()).Execute()
 

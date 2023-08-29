@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_DomainAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_DomainAPIService(t *testing.T) {
 
 	t.Run("Test DomainAPIService DomainCreate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.DomainAPI.DomainCreate(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_DomainAPIService(t *testing.T) {
 
 	t.Run("Test DomainAPIService DomainDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.DomainAPI.DomainDelete(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_OpalStack_DomainAPIService(t *testing.T) {
 
 	t.Run("Test DomainAPIService DomainList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.DomainAPI.DomainList(context.Background()).Execute()
 
@@ -59,7 +60,7 @@ func Test_OpalStack_DomainAPIService(t *testing.T) {
 
 	t.Run("Test DomainAPIService DomainRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 

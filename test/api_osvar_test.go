@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_OsvarAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_OsvarAPIService(t *testing.T) {
 
 	t.Run("Test OsvarAPIService OsvarCreate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OsvarAPI.OsvarCreate(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_OsvarAPIService(t *testing.T) {
 
 	t.Run("Test OsvarAPIService OsvarDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.OsvarAPI.OsvarDelete(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_OpalStack_OsvarAPIService(t *testing.T) {
 
 	t.Run("Test OsvarAPIService OsvarList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OsvarAPI.OsvarList(context.Background()).Execute()
 
@@ -59,7 +60,7 @@ func Test_OpalStack_OsvarAPIService(t *testing.T) {
 
 	t.Run("Test OsvarAPIService OsvarRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 
@@ -73,7 +74,7 @@ func Test_OpalStack_OsvarAPIService(t *testing.T) {
 
 	t.Run("Test OsvarAPIService OsvarUpdate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OsvarAPI.OsvarUpdate(context.Background()).Execute()
 

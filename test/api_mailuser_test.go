@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_MailuserAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_MailuserAPIService(t *testing.T) {
 
 	t.Run("Test MailuserAPIService MailuserCreate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.MailuserAPI.MailuserCreate(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_MailuserAPIService(t *testing.T) {
 
 	t.Run("Test MailuserAPIService MailuserDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.MailuserAPI.MailuserDelete(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_OpalStack_MailuserAPIService(t *testing.T) {
 
 	t.Run("Test MailuserAPIService MailuserList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.MailuserAPI.MailuserList(context.Background()).Execute()
 
@@ -59,7 +60,7 @@ func Test_OpalStack_MailuserAPIService(t *testing.T) {
 
 	t.Run("Test MailuserAPIService MailuserRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 
@@ -73,7 +74,7 @@ func Test_OpalStack_MailuserAPIService(t *testing.T) {
 
 	t.Run("Test MailuserAPIService MailuserUpdate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.MailuserAPI.MailuserUpdate(context.Background()).Execute()
 
@@ -85,7 +86,7 @@ func Test_OpalStack_MailuserAPIService(t *testing.T) {
 
 	t.Run("Test MailuserAPIService MailuserUpdatePublic", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.MailuserAPI.MailuserUpdatePublic(context.Background()).Execute()
 

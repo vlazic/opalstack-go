@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_IpAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_IpAPIService(t *testing.T) {
 
 	t.Run("Test IpAPIService IpList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.IpAPI.IpList(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_IpAPIService(t *testing.T) {
 
 	t.Run("Test IpAPIService IpRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 

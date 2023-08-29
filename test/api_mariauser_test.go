@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_MariauserAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_MariauserAPIService(t *testing.T) {
 
 	t.Run("Test MariauserAPIService MariauserCreate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.MariauserAPI.MariauserCreate(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_MariauserAPIService(t *testing.T) {
 
 	t.Run("Test MariauserAPIService MariauserDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.MariauserAPI.MariauserDelete(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_OpalStack_MariauserAPIService(t *testing.T) {
 
 	t.Run("Test MariauserAPIService MariauserList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.MariauserAPI.MariauserList(context.Background()).Execute()
 
@@ -59,7 +60,7 @@ func Test_OpalStack_MariauserAPIService(t *testing.T) {
 
 	t.Run("Test MariauserAPIService MariauserRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 
@@ -73,7 +74,7 @@ func Test_OpalStack_MariauserAPIService(t *testing.T) {
 
 	t.Run("Test MariauserAPIService MariauserUpdate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.MariauserAPI.MariauserUpdate(context.Background()).Execute()
 

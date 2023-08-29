@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_PsqluserAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_PsqluserAPIService(t *testing.T) {
 
 	t.Run("Test PsqluserAPIService PsqluserCreate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PsqluserAPI.PsqluserCreate(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_PsqluserAPIService(t *testing.T) {
 
 	t.Run("Test PsqluserAPIService PsqluserDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.PsqluserAPI.PsqluserDelete(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_OpalStack_PsqluserAPIService(t *testing.T) {
 
 	t.Run("Test PsqluserAPIService PsqluserList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PsqluserAPI.PsqluserList(context.Background()).Execute()
 
@@ -59,7 +60,7 @@ func Test_OpalStack_PsqluserAPIService(t *testing.T) {
 
 	t.Run("Test PsqluserAPIService PsqluserRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 
@@ -73,7 +74,7 @@ func Test_OpalStack_PsqluserAPIService(t *testing.T) {
 
 	t.Run("Test PsqluserAPIService PsqluserUpdate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.PsqluserAPI.PsqluserUpdate(context.Background()).Execute()
 

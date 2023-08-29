@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_QuarantinedmailAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_QuarantinedmailAPIService(t *testing.T) {
 
 	t.Run("Test QuarantinedmailAPIService QuarantinedmailDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.QuarantinedmailAPI.QuarantinedmailDelete(context.Background()).Execute()
 
@@ -35,7 +36,7 @@ func Test_OpalStack_QuarantinedmailAPIService(t *testing.T) {
 
 	t.Run("Test QuarantinedmailAPIService QuarantinedmailList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.QuarantinedmailAPI.QuarantinedmailList(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_OpalStack_QuarantinedmailAPIService(t *testing.T) {
 
 	t.Run("Test QuarantinedmailAPIService QuarantinedmailRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 
@@ -61,7 +62,7 @@ func Test_OpalStack_QuarantinedmailAPIService(t *testing.T) {
 
 	t.Run("Test QuarantinedmailAPIService QuarantinedmailSubmit", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.QuarantinedmailAPI.QuarantinedmailSubmit(context.Background()).Execute()
 

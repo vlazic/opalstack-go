@@ -11,10 +11,11 @@ package OpalStack
 
 import (
 	"context"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+	openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func Test_OpalStack_DnsrecordAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_OpalStack_DnsrecordAPIService(t *testing.T) {
 
 	t.Run("Test DnsrecordAPIService DnsrecordCreate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.DnsrecordAPI.DnsrecordCreate(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_OpalStack_DnsrecordAPIService(t *testing.T) {
 
 	t.Run("Test DnsrecordAPIService DnsrecordDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.DnsrecordAPI.DnsrecordDelete(context.Background()).Execute()
 
@@ -47,7 +48,7 @@ func Test_OpalStack_DnsrecordAPIService(t *testing.T) {
 
 	t.Run("Test DnsrecordAPIService DnsrecordList", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.DnsrecordAPI.DnsrecordList(context.Background()).Execute()
 
@@ -59,7 +60,7 @@ func Test_OpalStack_DnsrecordAPIService(t *testing.T) {
 
 	t.Run("Test DnsrecordAPIService DnsrecordRead", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var uuid string
 
@@ -73,7 +74,7 @@ func Test_OpalStack_DnsrecordAPIService(t *testing.T) {
 
 	t.Run("Test DnsrecordAPIService DnsrecordUpdate", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.DnsrecordAPI.DnsrecordUpdate(context.Background()).Execute()
 
