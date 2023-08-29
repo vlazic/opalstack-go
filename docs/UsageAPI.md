@@ -1,6 +1,6 @@
 # \UsageAPI
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *https://my.opalstack.com/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,7 +24,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func main() {
@@ -83,7 +83,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+    openapiclient "github.com/vlazic/opalstack-go"
 )
 
 func main() {
