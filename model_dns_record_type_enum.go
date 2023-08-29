@@ -20,13 +20,13 @@ type DNSRecordTypeEnum string
 
 // List of DNSRecordTypeEnum
 const (
-	A DNSRecordTypeEnum = "A"
-	AAAA DNSRecordTypeEnum = "AAAA"
-	CNAME DNSRecordTypeEnum = "CNAME"
-	MX DNSRecordTypeEnum = "MX"
-	TXT DNSRecordTypeEnum = "TXT"
-	SRV DNSRecordTypeEnum = "SRV"
-	CAA DNSRecordTypeEnum = "CAA"
+	DNSRECORDTYPEENUM_A DNSRecordTypeEnum = "A"
+	DNSRECORDTYPEENUM_AAAA DNSRecordTypeEnum = "AAAA"
+	DNSRECORDTYPEENUM_CNAME DNSRecordTypeEnum = "CNAME"
+	DNSRECORDTYPEENUM_MX DNSRecordTypeEnum = "MX"
+	DNSRECORDTYPEENUM_TXT DNSRecordTypeEnum = "TXT"
+	DNSRECORDTYPEENUM_SRV DNSRecordTypeEnum = "SRV"
+	DNSRECORDTYPEENUM_CAA DNSRecordTypeEnum = "CAA"
 )
 
 // All allowed values of DNSRecordTypeEnum enum

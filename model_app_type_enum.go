@@ -20,15 +20,15 @@ type AppTypeEnum string
 
 // List of AppTypeEnum
 const (
-	STA AppTypeEnum = "STA"
-	NPF AppTypeEnum = "NPF"
-	APA AppTypeEnum = "APA"
-	CUS AppTypeEnum = "CUS"
-	SLS AppTypeEnum = "SLS"
-	SLP AppTypeEnum = "SLP"
-	SLN AppTypeEnum = "SLN"
-	SVN AppTypeEnum = "SVN"
-	DAV AppTypeEnum = "DAV"
+	APPTYPEENUM_STA AppTypeEnum = "STA"
+	APPTYPEENUM_NPF AppTypeEnum = "NPF"
+	APPTYPEENUM_APA AppTypeEnum = "APA"
+	APPTYPEENUM_CUS AppTypeEnum = "CUS"
+	APPTYPEENUM_SLS AppTypeEnum = "SLS"
+	APPTYPEENUM_SLP AppTypeEnum = "SLP"
+	APPTYPEENUM_SLN AppTypeEnum = "SLN"
+	APPTYPEENUM_SVN AppTypeEnum = "SVN"
+	APPTYPEENUM_DAV AppTypeEnum = "DAV"
 )
 
 // All allowed values of AppTypeEnum enum

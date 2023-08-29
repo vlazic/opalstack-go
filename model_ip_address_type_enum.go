@@ -20,8 +20,8 @@ type IPAddressTypeEnum string
 
 // List of IPAddressTypeEnum
 const (
-	_4 IPAddressTypeEnum = "4"
-	_6 IPAddressTypeEnum = "6"
+	IPADDRESSTYPEENUM__4 IPAddressTypeEnum = "4"
+	IPADDRESSTYPEENUM__6 IPAddressTypeEnum = "6"
 )
 
 // All allowed values of IPAddressTypeEnum enum

@@ -20,10 +20,10 @@ type NoticeTypeEnum string
 
 // List of NoticeTypeEnum
 const (
-	M NoticeTypeEnum = "M"
-	P NoticeTypeEnum = "P"
-	D NoticeTypeEnum = "D"
-	R NoticeTypeEnum = "R"
+	NOTICETYPEENUM_M NoticeTypeEnum = "M"
+	NOTICETYPEENUM_P NoticeTypeEnum = "P"
+	NOTICETYPEENUM_D NoticeTypeEnum = "D"
+	NOTICETYPEENUM_R NoticeTypeEnum = "R"
 )
 
 // All allowed values of NoticeTypeEnum enum

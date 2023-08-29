@@ -20,10 +20,10 @@ type StateEnum string
 
 // List of StateEnum
 const (
-	READY StateEnum = "READY"
-	PENDING_CREATE StateEnum = "PENDING_CREATE"
-	PENDING_UPDATE StateEnum = "PENDING_UPDATE"
-	PENDING_DELETE StateEnum = "PENDING_DELETE"
+	STATEENUM_READY StateEnum = "READY"
+	STATEENUM_PENDING_CREATE StateEnum = "PENDING_CREATE"
+	STATEENUM_PENDING_UPDATE StateEnum = "PENDING_UPDATE"
+	STATEENUM_PENDING_DELETE StateEnum = "PENDING_DELETE"
 )
 
 // All allowed values of StateEnum enum

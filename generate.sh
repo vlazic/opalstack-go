@@ -322,6 +322,7 @@ additional_properties=(
     "basePath=$BASE_PATH"
     "apiKeyPrefix=Bearer"
     "withGoCodegenComment=true"
+    "enumClassPrefix=true"
     "goModuleName=github.com/$GITHUB_USER_ID/$GITHUB_REPO_ID"
 )
 

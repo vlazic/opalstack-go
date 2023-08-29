@@ -20,11 +20,11 @@ type AccountResponsePaymentProcessorEnum string
 
 // List of AccountResponsePaymentProcessorEnum
 const (
-	STRIPE AccountResponsePaymentProcessorEnum = "stripe"
-	PAYPAL AccountResponsePaymentProcessorEnum = "paypal"
-	BITPAY AccountResponsePaymentProcessorEnum = "bitpay"
-	COINPAYMENTS AccountResponsePaymentProcessorEnum = "coinpayments"
-	MANUAL AccountResponsePaymentProcessorEnum = "manual"
+	ACCOUNTRESPONSEPAYMENTPROCESSORENUM_STRIPE AccountResponsePaymentProcessorEnum = "stripe"
+	ACCOUNTRESPONSEPAYMENTPROCESSORENUM_PAYPAL AccountResponsePaymentProcessorEnum = "paypal"
+	ACCOUNTRESPONSEPAYMENTPROCESSORENUM_BITPAY AccountResponsePaymentProcessorEnum = "bitpay"
+	ACCOUNTRESPONSEPAYMENTPROCESSORENUM_COINPAYMENTS AccountResponsePaymentProcessorEnum = "coinpayments"
+	ACCOUNTRESPONSEPAYMENTPROCESSORENUM_MANUAL AccountResponsePaymentProcessorEnum = "manual"
 )
 
 // All allowed values of AccountResponsePaymentProcessorEnum enum

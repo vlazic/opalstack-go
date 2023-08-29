@@ -20,9 +20,9 @@ type AccountUpdatePaymentProcessorEnum string
 
 // List of AccountUpdatePaymentProcessorEnum
 const (
-	STRIPE AccountUpdatePaymentProcessorEnum = "stripe"
-	PAYPAL AccountUpdatePaymentProcessorEnum = "paypal"
-	MANUAL AccountUpdatePaymentProcessorEnum = "manual"
+	ACCOUNTUPDATEPAYMENTPROCESSORENUM_STRIPE AccountUpdatePaymentProcessorEnum = "stripe"
+	ACCOUNTUPDATEPAYMENTPROCESSORENUM_PAYPAL AccountUpdatePaymentProcessorEnum = "paypal"
+	ACCOUNTUPDATEPAYMENTPROCESSORENUM_MANUAL AccountUpdatePaymentProcessorEnum = "manual"
 )
 
 // All allowed values of AccountUpdatePaymentProcessorEnum enum
